@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/style.css" />
+        <title>RACOON IN THE HOLE</title>
+        <style>
+            @font-face {
+                font-family: "MoveSans-Bold";
+                src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2")
+                    format("woff2");
+                font-weight: 700;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: "m6x11";
+                src: url("/font/m6x11.ttf") format("truetype");
+            }
+            @font-face {
+                font-family: "Galmuri11";
+                src: url("/font/Galmuri11.woff2") format("woff2");
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+        <script>
+            function onMouseClick() {
+                const fileUrl = "/sounds/effect/universal/Modern1.mp3";
+                const audio = new Audio(fileUrl);
+                audio.play();
+            }
+            document.addEventListener("click", onMouseClick);
+        </script>
+    </body>
+</html>
+

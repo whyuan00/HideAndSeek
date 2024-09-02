@@ -1,0 +1,58 @@
+.ranking-wrapper {
+    position: relative ; 
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+    text-align: center ;
+    min-height: 100vh;
+    padding: 20px;
+    justify-content: center ;
+}
+
+
+.ranking-controls {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.ranking-controls .rpgui-button h2 {
+    font-size: 1.7em !important;
+    font-family: "MoveSans-Bold";
+    flex-direction: column;
+    margin: 10px;
+}
+
+.my-ranking {
+    width: 40% !important;
+    height: 30% !important;
+}
+
+.ranking-log{
+    overflow: auto;
+    width: 40% !important;
+    height: 30% !important;
+}
+
+.ranking-log ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+}
+
+.nickname-style {
+    font-size: 1.7em !important;
+    font-family: "MoveSans-Bold" !important;
+}
+
+.ranking-log li {
+    margin-bottom: 20px;
+}
+
+.ranking-board.rpgui-container.framed {
+    flex-direction: column !important;
+    position: relative !important;
+    float: none !important;
+    clear: none !important;
+    padding: 1rem !important;
+}

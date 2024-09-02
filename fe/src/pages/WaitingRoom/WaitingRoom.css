@@ -1,0 +1,157 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;                                
+    text-align: center;
+}
+
+/* .waitingRoom-background-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 60vw;
+    height: 75vh;
+    transform: translate(-50%, -50%);
+    background-color: rgba(235, 235, 226, 0.6);
+    z-index: -1;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+} */
+
+.rpgui-content h2 {
+    font-size: 1.7em !important;
+    font-family: "MoveSans-Bold";
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+/* 플레이어 그리드 */
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.player-slot.rpgui-container.framed {
+    width: 12rem;
+    height: 10rem;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.5rem !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+    margin: 0.5rem !important;
+    float: none !important;
+    clear: none !important;
+}
+
+.player-ready-status.not-ready {
+    color: #f3da4b;
+}
+
+.player-ready-status.ready {
+    color: #5353c8;
+}
+
+.player-nickname {
+    white-space: nowrap;
+}
+
+/* 채팅창 */
+/* .chat-box {
+    border: 0.5rem solid #000;
+    height: 5rem;
+    overflow-y: auto;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: "MoveSans-Bold";
+    color: white;
+
+} */
+
+/* 카운트다운 표시 */
+/* .countdown-display,
+.countdown-message {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: "MoveSans-Bold";
+    color: white;
+
+} */
+
+button.rpgui-button {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+button.rpgui-button h2 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.countdown-modal {
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        padding: 2rem;
+        background: transparent;
+        border-radius: 8px;
+        box-shadow: none;
+        font-family: "MoveSans-Bold";
+        color: white;
+        border: none;
+        z-index: 1001;
+}
+
+.countdown-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    z-index: 1000;
+}
+
+.countdown-modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.countdown-logo {
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 1rem;
+    position: absolute;
+}
+
+.countdown-image {
+    max-width: 30%;
+    height: auto;
+    margin-top: 20rem;
+    position: relative;
+}
+
+.button-group {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}

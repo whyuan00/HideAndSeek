@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: game_server
+  datasource:
+    url: jdbc:h2:mem:database
+  h2:
+    console:
+      enabled: true
+
+jwt:
+  issuer: localhost
+  secret: ca56dee53f320dc371a85b06471005ffa4c2180e33622cd4b3e9182ff962e343983e8b1718e0934d512c76cf88cecfc0d8a9e183397371a72ba3a71e70f2c363
+
+security:
+  allowed-origins: http://localhost:8080
+
+server:
+  port: 8081

@@ -1,0 +1,40 @@
+/* CharacterAnimation.css
+.animation-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.character {
+    position: absolute;
+    bottom: 0;
+    width: 32px;
+    height: 64px;
+    background: url('/public/assets/character/fox.png') no-repeat;
+    background-size: 128px 192px;
+    animation: moveLeft 1s linear infinite, spriteAnimation 3s steps(4) infinite;
+    z-index: 20;
+}
+
+@keyframes moveLeft {
+    from {
+        transform: translateX(100vw);
+    }
+
+    to {
+        transform: translateX(-128px);
+    }
+}
+
+@keyframes spriteAnimation {
+    from {
+        background-position: 0 0;
+        /* 스프라이트의 첫 번째 프레임 */
+    /* } */
+
+    /* to {
+        background-position: -512px 0; */
+    /* }
+}  */

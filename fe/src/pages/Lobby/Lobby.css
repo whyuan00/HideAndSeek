@@ -1,0 +1,106 @@
+.background-overlay {
+    position: absolute;
+    width: 450px;
+    height: 570px;
+    background-color: rgba(235, 235, 226, 0.6);
+    z-index: -1;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.wrapper {
+    position: relative;
+    width: 420px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    justify-content: center;
+}
+
+form {
+    flex-direction: column;
+}
+
+/*방 내부에 한국어들은 궁서체 안나오게 h2태그로 쓰는중임  */
+.rpgui-content h2 {
+    font-size: 1.7em !important;
+    font-family: "MoveSans-Bold";
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+/* RoomCreate의 placeholder 텍스트 */
+.rpgui-container ::placeholder {
+    color: rgba(255, 255, 255, 0.692);
+    font-family: "MoveSans-Bold";
+    font-size: 1em;
+    text-align: center;
+}
+
+/* lobyy와 roomcreate의 내부콘텐츠 */
+.wrapper .main-frame {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+/* roomJoin에서는 main-frame 내부 form 있음 */
+.wrapper .main-frame form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper .input-box {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+
+.wrapper .input-box input {
+    position: relative;
+    /* margin-left: 10px; */
+    /* padding-left: 10px; */
+    /* width: 70%; */
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-box-lobby {
+    display: flex;
+}
+.button-box-lobby button {
+    display: flex;
+    background: transparent;
+    border: none;
+    color: black;
+    align-items: center;
+}
+
+button {
+    align-items: center;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
